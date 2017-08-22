@@ -13,31 +13,31 @@
 	text-align: center;
 	padding: 10px;
 	border-radius: 10%;
+	margin: 10px;
 }
 
 /* Colors for each box */
-.box0 {background: #1abc9c;}
-.box1 {background: #16a085;}
-.box2 {background: #3498db;}
-.box3 {background: #9b59b6;}
-.box4 {background: #34495e;}
-.box5 {background: #f1c40f;}
-.box6 {background: #e67e22;}
-.box7 {background: #e74c3c;}
-.box8 {background: #bdc3c7;}
-.box9 {background: #2ecc71;}
+.col0 {background: #1abc9c;}
+.col1 {background: #16a085;}
+.col2 {background: #3498db;}
+.col3 {background: #9b59b6;}
+.col4 {background: #34495e;}
+.col5 {background: #f1c40f;}
+.col6 {background: #e67e22;}
+.col7 {background: #e74c3c;}
+.col8 {background: #bdc3c7;}
+.col9 {background: #2ecc71;}
 
 /* Flex box stuff below */
 #container {
-	display: flex;
-	border: 10px solid mistyrose;
-	height: 100vh;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
+	
 }
 
-/*.row0,
-.row1 {
-	width: 25%;
-}*/
+.row {
+	display: flex;
+/*	border: 10px solid mistyrose;*/
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}

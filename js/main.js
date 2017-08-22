@@ -1,4 +1,4 @@
-var words = ['your', 'name'];
+var words = ['david', 'thorpe\'s', 'website'];
 
 var wordsLength = words.length
 
@@ -8,11 +8,14 @@ var div = document.createElement('div');
 
 for (var i = 0; i < wordsLength; i++) {
 	var word = words[i];
+	var rowDiv = document.createElement('div');
+	rowDiv.className = 'row row' + i;
+	container.appendChild(rowDiv);
 	for (var j = 0; j < word.length; j++) {
-		var div = document.createElement('div');
-		div.className = 'row' + i + ' box' + j + ' box';
+		var boxDiv = document.createElement('div');
+		boxDiv.className = 'box col' + Math.floor(Math.random()*10);
 		var letter = word[j];
-		div.innerHTML = letter.toUpperCase();
-		container.appendChild(div)
-	}	
+		boxDiv.innerHTML = letter.toUpperCase();
+		rowDiv.appendChild(boxDiv);
+	}
 }
