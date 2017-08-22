@@ -16,7 +16,7 @@
 	margin: 10px;
 }
 
-/* Colors for each box */
+/* Random colors for each box */
 .col0 {background: #1abc9c;}
 .col1 {background: #16a085;}
 .col2 {background: #3498db;}
@@ -39,5 +39,5 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px;
+
 }
