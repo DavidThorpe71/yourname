@@ -2,7 +2,9 @@ var words = ['david', 'thorpe\'s', 'website'];
 
 var wordsLength = words.length
 
-var container = document.getElementById('container');
+var container = document.getElementById('container')
+
+
 
 var div = document.createElement('div');
 
@@ -19,3 +21,14 @@ for (var i = 0; i < wordsLength; i++) {
 		rowDiv.appendChild(boxDiv);
 	}
 }
+
+var opacityChange = function() {
+	var allBoxes = document.querySelectorAll('.box');
+	console.log(allBoxes);
+	for (i = 0; i < allBoxes.length; i++) {
+		allBoxes[i].classList.toggle('load');
+	}
+}
+
+container.addEventListener('click', opacityChange);
+
