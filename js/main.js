@@ -24,11 +24,9 @@ for (var i = 0; i < wordsLength; i++) {
 
 var opacityChange = function() {
 	var allBoxes = document.querySelectorAll('.box');
-	console.log(allBoxes);
 	for (i = 0; i < allBoxes.length; i++) {
 		allBoxes[i].classList.toggle('load');
 	}
 }
 
 container.addEventListener('click', opacityChange);
-
